@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d0d4da;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a5563;
+}
+
+.site_header {
+    padding: 24px 0 10px;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 28px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(88, 103, 122, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.header_logo {
+    color: #5b6573;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.header_link {
+    color: #5f6978;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.header_link:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #3f4957;
+}
+
+.header_link_button {
+    background-color: #8f9bab;
+    color: #ffffff;
+}
+
+.header_link_button:hover {
+    background-color: #7b8899;
+    color: #ffffff;
+}
+
+.video_player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.video {
+    display: block;
+    max-width: 100%;
+}
+
+#range_video {
+    width: 100%;
+}
+
+.control_incons .fa-solid {
+    cursor: pointer;
+    color: black;
+}
+
+.control_incons .fa-play {
+    padding-right: 5px;
+}
+
+.media_controler {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.control_panel {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.time {
+    text-align: end;
+    margin-bottom: 0px;
+}
+
+.section_title {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: fangsong;
+    color: var(--bs-gray-dark);
+    margin-bottom: 0px;
+}
+
+.section_subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: fangsong;
+    color: rgb(124, 121, 121);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .header_inner {
+        flex-direction: column;
+    }
+
+    .header_logo {
+        font-size: 20px;
+    }
+
+    .header_nav {
+        gap: 10px;
+    }
+}

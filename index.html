@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site_header">
+        <div class="header_inner container">
+            <a href="#" class="header_logo">Media</a>
+            <nav class="header_nav">
+                <a href="#" class="header_link">Home</a>
+                <a href="#" class="header_link">Videos</a>
+                <a href="#" class="header_link">Playlist</a>
+                <a href="#" class="header_link header_link_button">Open player</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="media">
+        <h2 class="section_title">Video player</h2>
+        <p class="section_subtitle">You can use this player in order to watch videos</p>
+        <div class="container">
+            <div class="video_player">
+                <video class="video"
+                    src="https://cs19.pikabu.ru/s/2026/04/08/19/zezar5m6_s0f0d32m0_640x360.mp4"></video>
+                <input type="range" id="range_video" value="0">
+
+                <div class="media_controler">
+                    <div class="control_incons">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <p class="time"><span class="now_time"></span></p>
+                </div>
+
+                <div class="control_panel">
+                    <input type="range" id="volume_video" min="0" max="1" step="0.01">
+                    <span class="volume_level"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d3b7a57a52.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
